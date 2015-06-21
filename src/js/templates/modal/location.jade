@@ -1,0 +1,24 @@
+.modal-dialog
+  .modal-content
+    .modal-header
+      button.close(type='button' name='back'): i.fa.fa-arrow-left
+      .modal-title: .nav
+        button.close(type='button' name='update'): i.fa.fa-check
+
+    .modal-body.location: .list-group
+      .input-group
+        span.input-group-addon: i.fa.fa-users
+        input.form-control(type='text' name='filter' placeholder='Живой поиск...')
+
+      //- mixin input(city)
+      //-   label.list-group-item(style='display: {{ city.display }}')
+      //-     input(type='radio' name='city' value='{{ city.id }}')
+      //-     h4.list-group-item-heading {{ city.name }}
+
+      .list-group#location
+        .list-group-item Загрузка...
+      //-   | {= _.each(cites, function (city) { }}
+      //-   .list-group-item: +input(city)
+      //-   | {= }) }}
+
+

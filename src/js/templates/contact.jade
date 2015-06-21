@@ -1,0 +1,15 @@
+mixin img
+  - var src   = 'images/avatars/placeholder.gif'
+  - var avatar = '{{ avatar }}'
+  - var style  = 'background-color: {{ color }}'
+  img.media-object(class=avatar src=src style=style)
+
+
+.over(style="display: {{ display }}")
+  .mask
+    a.btn.btn-info(href="/contact/{{ id }}"    ): i.fa.fa-search-plus
+    a.btn.btn-primary(href="/delete"): i.fa.fa-trash
+  .thumbnail
+    +img
+    .caption {{ name }}
+    .caption {{ surname }}

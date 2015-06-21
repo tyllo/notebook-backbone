@@ -1,0 +1,23 @@
+// оригинальный style и fonts
+// http://fonts4web.ru/lato.html
+
+@mixin font-face-lato($fontname, $font-style: normal, $font-weight: normal) {
+  // font-family: #{fontname}
+  $path: '../fonts/' + $fontname + '/' + $fontname;
+  @font-face {
+      font-family: 'Lato';
+      src: url($path + '.eot');
+      src: url($path + '.eot?#iefix')format('embedded-opentype'),
+      url($path + '.woff') format('woff'),
+      url($path + '.ttf') format('truetype');
+      font-style: $font-style;
+      font-weight: $font-weight;
+  }
+}
+
+@include font-face-lato(LatoRegular,     normal, normal);
+@include font-face-lato(LatoBold,        normal, 700);
+@include font-face-lato(LatoItalic,      italic, normal);
+@include font-face-lato(LatoLight,       normal, 300);
+@include font-face-lato(LatoBoldItalic,  italic, 700);
+@include font-face-lato(LatoLightItalic, italic, 300);

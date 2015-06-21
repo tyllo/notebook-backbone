@@ -1,0 +1,34 @@
+{
+  "name": "notebook-backbone",
+  "version": "0.0.1",
+  "authors": [
+    "tyllo <gmtyllo@gmail.com>"
+  ],
+  "description": "Записная книжка - тест backbone",
+  "keywords": [
+    "Записная",
+    "книжка",
+    "notebook",
+    "backbone"
+  ],
+  "license": "MIT",
+  "homepage": "notebook.xdraw.ru",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.0",
+    "underscore": "~1.8.3",
+    "requirejs": "~2.1.17",
+    "requirejs-text": "~2.0.14",
+    "font-awesome": "~4.3.0",
+    "datetimepicker": "~2.4.3",
+    "bootstrap-sass": "~3.3.4",
+    "Lato": "http://fonts4web.ru/fonts/Lato.zip",
+    "Backbone.localStorage": "~1.1.16"
+  }
+}

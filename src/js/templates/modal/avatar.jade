@@ -1,0 +1,16 @@
+//- картинка с плейсхолдером
+- var placeholder = 'images/avatars/placeholder.gif'
+
+.modal-dialog
+  .modal-content
+    .modal-header
+      button.close(type='button', name='back'): i.fa.fa-arrow-left
+      .modal-title: .nav: .close
+
+    .modal-body.row
+      - var id = -1
+      while id++ < 24
+        a.col-xs-4.col-sm-2.thumbnail(href='/avatar/#{id}')
+          img(class='avatar-#{id}' src=placeholder style='background-color:{{ color }}')
+    - var href = 'http://www.freepik.com'
+    .modal-footer: a(href=href target="_blank" rel="nofollow") Avatar - designed by Freepik

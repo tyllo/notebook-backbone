@@ -1,0 +1,29 @@
+{
+  "name": "notebook-backbone",
+  "version": "0.0.1",
+  "description": "Записная книжка - тест backbone",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install && gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Записная",
+    "книжка",
+    "notebook",
+    "backbone"
+  ],
+  "author": "tyllo <gmtyllo@gmail.com> (http://xdraw.ru)",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.7.1",
+    "connect-modrewrite": "^0.8.1",
+    "gulp": "^3.8.11",
+    "gulp-csso": "^1.0.0",
+    "gulp-jade": "^1.0.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "jade": "^1.10.0"
+  }
+}

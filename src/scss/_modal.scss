@@ -1,0 +1,208 @@
+// затемним задник
+.modal-backdrop.in { opacity: 1 }
+
+// максимальная ширина модального окна
+.modal-dialog { max-width: 400px }
+
+// поле с надписями над телефонами, именем, локацией
+.modal-header { padding: 0 3px }
+
+// fix размер у блока с именем
+.modal-body .row {
+  margin-right:0;
+  margin-left:0;
+}
+
+// кнопка -> слева
+button.close[name='back'] { float: left }
+
+// размер кнопок-иконок сверху
+.close { padding: 10px !important }
+
+// треугольник у фото сверху справа
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 15px solid lightgray;
+  border-left: 15px solid transparent;
+  float: right;
+  position: absolute;
+  right:0;
+}
+
+// кнопка сброса ввденого текста
+.input-group-addon {
+  &:last-child {
+  padding-left: 0;
+  padding-right: 0;
+  }
+  & button {
+    background-color: transparent;
+    border: 0;
+    opacity: 0.5;
+  }
+
+  & button:hover { opacity: 1 }
+}
+
+// поле с вводом картинки
+.image {
+  padding-left:0;
+  padding-right:0;
+  & a { margin: 0 }
+  & a img {
+    width: 100%;
+    background-color: rgba(255,255,255,0.1);
+  }
+  & a img:hover { opacity: 0.5 }
+}
+
+// hover-эффект на полях со ссылкой <a> типо поля с телефоном
+p.form-control-static a, a.input-group {
+  color:inherit;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+  }
+}
+
+// прозрачный фон у иконки слева от у поля с типом телефон
+.input-group-addon { background-color: transparent }
+
+// кнопка добавить еще поле с телефоном, локацией и т.д.
+button[name='clone'] {
+  padding: 8px 0;
+  background-color: transparent;
+  border: 0;
+  border-top: 1px solid #485563;
+  display: block;
+  width: 100%;
+  opacity: 0.5;
+
+  &:hover, &:focus {
+    opacity: 1;
+    background-color: rgba(255,255,255,0.1);
+  }
+}
+
+/***********************************
+         for modal/avatar
+***********************************/
+// расстояние между аватарками
+.thumbnail {
+  padding: 2px;
+  &:hover { opacity:0.5 }
+}
+
+// чтобы аватары были почти впритык к краям
+.modal-body.row {
+  padding:0px;
+  margin-left:0;
+  margin-right:0;
+}
+
+// чтобы аватары были почти впритык к краям
+.modal-body.row { padding:0px }
+
+// подвал со ссылкой на владельцев аватарок
+.modal-footer {
+  padding: 0;
+  & a {
+    margin: 3px 10px;
+    color:inherit;
+    font-size:10px;
+    opacity:0.3;
+  }
+  & a:hover { text-decoration: none; opacity: 1 }
+}
+
+/***********************************
+         for modal/read
+***********************************/
+// контейнер с аватаркой и именем
+.modal-body .row {
+  margin:0;
+
+  // позиция поля с именем
+  & .name {
+    position: absolute;
+    background-color: transparent;
+    bottom: 20px
+  }
+
+  // шрифт имени
+  & .name {
+    font-weight:700;
+    text-shadow: 0 0 2px black;
+  }
+  // полоска над никнеймом
+  & .name span {
+    display:block;
+    margin-right: 10px;
+    font-weight:300;
+    text-shadow: none;
+    border-top: 1px solid lightgray;
+  }
+
+  // высота поля с аватаркой
+  & .image-contact {
+    height: 140px;
+    background-position: 0
+  }
+}
+
+// hover-эффект на полях со ссылкой <a> типо поля с телефоном
+p.form-control-static a, a.input-group {
+  color:inherit;
+  transition: 0.3s;
+  &:hover {
+    background-color: rgba(255,255,255,0.1);
+    text-decoration: none;
+  }
+}
+
+/***********************************
+         for modal/location
+***********************************/
+// ширина блока с галочкой во все модальое окно
+.modal-body.location { padding: 0 }
+
+// галочка при наведении на поле с вводом текста
+.location .input-group {
+  background-color: rgba(255,255,255,0.5);
+  & button       { display: none }
+  &:hover button { display: block }
+}
+
+// hover-эффект на поле с галочкой
+label {
+  &.list-group-item { border-bottom: 2px solid grey }
+  &:hover { background-color: rgba(0,0,0,0.15) }
+}
+
+//
+.list-group-item { margin-bottom: 5px }
+
+// иконка с галочкой
+input[type='radio'] {
+  display: none;
+  & + h4:before { margin-right: 20px }
+  & + h4:before { font-family: FontAwesome }
+  & + h4:before { content: "\f10c" }
+  // &:checked + h4 { background-color: rgba(0,0,0,0.15) }
+  &:checked + h4:before { content: "\f111" }
+}
+
+/***********************************
+         for modal/group
+***********************************/
+
+// иконка с галочкой
+input[type='checkbox'] {
+  display: none;
+  & + h4:before { margin-right: 20px }
+  & + h4:before { font-family: FontAwesome }
+  & + h4:before { content: "\f096" }
+  &:checked + h4:before { content: "\f046" }
+}

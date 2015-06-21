@@ -1,0 +1,22 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"project.sublime-project",
+				".gitignore",
+				"package.json",
+				"bower.json"
+			],
+			"folder_exclude_patterns":
+			[
+				"node_modules",
+				"bower_components",
+				"dist",
+				"src/images"
+			],
+			"path": "."
+		}
+	]
+}

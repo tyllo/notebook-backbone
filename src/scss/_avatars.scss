@@ -1,0 +1,15 @@
+// аватары и base64 svg
+.avatar{
+  width: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@for $i from 0 through 24 {
+  .avatar-#{$i}{
+    @extend .avatar;
+    $img: "../images/avatars/avatar-#{$i}.svg";
+    background-image: url($img);
+    // background-image: inline-image($img);
+  }
+}

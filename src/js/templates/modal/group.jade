@@ -1,0 +1,19 @@
+.modal-dialog
+  .modal-content
+    .modal-header
+      button.close(type='button' name='back'): i.fa.fa-arrow-left
+      .modal-title: .nav
+        //- button.close(type='button' name='update'): i.fa.fa-check
+
+    .modal-body.location: .list-group
+      .input-group
+        span.input-group-addon: i.fa.fa-users
+        input.form-control(type='text' name='addGroup' placeholder='Добавить группу...')
+        span.input-group-addon(style='padding: 0px')
+          button.btn.btn-success.btn-ms(type='button' name='addGroup'): i.fa.fa-check
+
+      | {= _(groupsC).each(function (item) { }}
+      label.list-group-item
+        input(type='checkbox' name='groups' value='{{ item }}')
+        h4.list-group-item-heading {{ item }}
+      | {=  }) }}
