@@ -60,3 +60,5 @@ $ gulp
 
 **Менеджер пакетов** [bower](http://bower.io) и **сборщик проектов** [Gulp](http://gulpjs.com)
 
+CORS, REST
+
